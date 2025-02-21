@@ -39,6 +39,7 @@ class DjangoflowMarkdownLineTruncate extends BaseMarkdownTruncate {
 
     return ListView(
       shrinkWrap: shrinkWrap,
+      physics: const NeverScrollableScrollPhysics(),
       children: [
         Text.rich(
           flattenedTextSpan,
