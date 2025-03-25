@@ -37,9 +37,8 @@ class DjangoflowMarkdownLineTruncate extends BaseMarkdownTruncate {
 
     final flattenedTextSpan = _flattenTextSpan(children);
 
-    return ListView(
-      shrinkWrap: shrinkWrap,
-      physics: const NeverScrollableScrollPhysics(),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text.rich(
           flattenedTextSpan,
