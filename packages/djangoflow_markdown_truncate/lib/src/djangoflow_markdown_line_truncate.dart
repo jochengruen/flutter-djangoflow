@@ -29,8 +29,8 @@ class DjangoflowMarkdownLineTruncate extends BaseMarkdownTruncate {
   @override
   Widget build(BuildContext context, List<Widget>? children) {
     if (maxLines == null) {
-      return ListView(
-        shrinkWrap: shrinkWrap,
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: children!,
       );
     }
